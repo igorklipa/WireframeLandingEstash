@@ -1,0 +1,53 @@
+* {
+  font-family: "Open Sans", sans-serif;
+}
+
+body {
+  margin: 0;
+}
+
+.row {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  margin: 0 15%;
+}
+
+.row-fluid {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin: 0 15%;
+}
+
+.flex-column {
+  display: flex;
+  flex-direction: column;
+}
+
+.flex-row {
+  display: flex;
+  flex-direction: row;
+}
+
+.flex-center {
+  justify-content: center;
+  align-items: center;
+}
+
+.half-width {
+ width: 50%;
+}
+
+.title {
+  font-size: 25px;
+  font-weight: 300;
+  color: #fff;
+}
+
+.paragraph {
+  font-size: 14px;
+  font-weight: 500;
+  color: #fff;
+  line-height: 25px;
+}
