@@ -1,0 +1,108 @@
+@import "sharedStyles.css";
+
+* {
+  font-family: "Open Sans", sans-serif;
+}
+
+body {
+  margin: 0;
+}
+
+.row {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  margin: 0 15%;
+}
+
+.row-fluid {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin: 0 10%;
+}
+
+.flex-column {
+  display: flex;
+  flex-direction: column;
+}
+
+.flex-row {
+  display: flex;
+  flex-direction: row;
+}
+
+.flex-center {
+  justify-content: center;
+  align-items: center;
+}
+
+.half-width {
+  width: 50%;
+}
+
+.title {
+  font-size: 25px;
+  font-weight: 400;
+  color: #fff;
+
+  &-green {
+    color: $primaryColor;
+  }
+}
+
+.paragraph {
+  font-size: 14px;
+  font-weight: 500;
+  color: #fff;
+  line-height: 25px;
+
+  &-black {
+    color: $titleDarkColor;
+  }
+}
+
+.dark-section {
+  background-color: $sectionDarkColor;
+}
+
+.margin-20 {
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.margin-50 {
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.sign-up-btn {
+  display: flex;
+  justify-content: center;
+  margin: 0 auto;
+  padding: 10px;
+  align-items: center;
+  background-color: $primaryColor;
+  border-radius: 5px;
+  font-size: 16px;
+  border-color: $primaryColor;
+  color: #fff;
+}
+
+.social-link-btn {
+  display: flex;
+  padding: 5px;
+  background-color: #ffffff;
+  border-color: #ffffff;
+  border-radius: 50%;
+  cursor: pointer;
+
+  &:hover {
+    background-color: $primaryColor;
+    border-color: $primaryColor;
+  }
+}

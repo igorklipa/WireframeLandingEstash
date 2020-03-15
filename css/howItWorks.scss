@@ -1,0 +1,40 @@
+@import "shared/sharedStyles";
+
+.howItWorks {
+  margin-bottom: 20px;
+
+  &__section-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+
+    &-item {
+      display: flex;
+      flex-direction: column;
+      flex: 0 45%;
+      margin: 10px;
+    }
+
+    &-title {
+      font-size: 16px;
+      font-weight: 900;
+      margin-bottom: 20px;
+      color: $titleDarkColor;
+    }
+
+    &-paragraph {
+      font-size: 14px;
+      font-weight: 500;
+      color: $titleDarkColor;
+    }
+  }
+
+  &__video {
+    display: flex;
+    justify-content: center;
+
+    iframe {
+      width: 70%;
+    }
+  }
+}

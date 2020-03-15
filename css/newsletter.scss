@@ -1,0 +1,59 @@
+@import "shared/sharedStyles";
+
+.newsletter {
+  padding-top: 50px;
+  padding-bottom: 50px;
+  background-color: #373737;
+
+  &__title {
+
+  }
+
+  &__input-container {
+    display: flex;
+    justify-content: center;
+    padding-bottom: 20px;
+
+    &-input {
+      border: 2px $primaryColor solid;
+      height: 40px;
+      padding-left: 30px;
+      padding-right: 30px;
+      border-bottom-left-radius: 5px;
+      border-top-left-radius: 5px;
+      font-size: 16px;
+      width: 450px;
+      background-color: transparent;
+    }
+
+    &-send-btn {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 10px;
+      background-color: $primaryColor;
+      border-top-right-radius: 5px;
+      border-bottom-right-radius: 5px;
+      font-size: 16px;
+      border-color: $primaryColor;
+      color: #fff;
+
+      i {
+        margin-left: 8px;
+      }
+    }
+
+    ::placeholder {
+      color: #ffffff;
+      opacity: 1; /* Firefox */
+    }
+
+    :-ms-input-placeholder { /* Internet Explorer 10-11 */
+      color: #ffffff;
+    }
+
+    ::-ms-input-placeholder { /* Microsoft Edge */
+      color: #ffffff;
+    }
+  }
+}

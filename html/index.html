@@ -4,11 +4,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mock 3.0 - Landing page</title>
-    <link rel="stylesheet" type="text/css" href="../css/main.css">
+    <link rel="stylesheet" type="text/css" href="../css/shared/main.css">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
           rel="stylesheet">
 </head>
 <body>
+    <!--Header-->
     <header class="header">
         <div class="header__container row-fluid flex-column">
             <div class="header__container-logo">
@@ -28,9 +29,10 @@
         </div>
     </header>
 
+    <!--Responsive-->
     <div class="responsive">
-        <div class="title responsive__title">Fully Responsive HTML5</div>
-        <div class="row">
+        <div class="title responsive__title margin-50">Fully Responsive HTML5</div>
+        <div class="row-fluid">
             <div class="responsive__article flex-column flex-center">
                 <div class="responsive__article-image">
                     <i class="material-icons">
@@ -69,5 +71,134 @@
             </div>
         </div>
     </div>
+
+    <!--Awesome as it sounds-->
+    <div class="dark-section">
+        <div class="row-fluid">
+            <div class="half-width">
+                <div class="title title-green margin-50">It's Awesome as it sounds</div>
+                <div class="paragraph paragraph-black margin-20">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Culpa ex maiores non quod! Accusantium aspernatur aut culpa delectus distinctio et labore qui, quia quo quod rem repellat repellendus totam velit?</div>
+            </div>
+            <div>
+
+            </div>
+        </div>
+    </div>
+
+    <!--What people say-->
+    <div class="flex-column">
+        <div class="title title-green margin-50 text-center">It's Awesome as it sounds</div>
+        <div class="paragraph paragraph-black row-fluid margin-20 text-center">"Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab at consequuntur dignissimos, expedita harum odit saepe voluptatum! Architecto, asperiores eligendi nostrum nulla obcaecati officiis, quaerat quasi rem similique sunt temporibus."</div>
+    </div>
+
+    <!--How it works-->
+    <div class="howItWorks">
+        <div class="flex-column">
+            <div class="title title-green margin-50 text-center">How it works</div>
+            <div class="row-fluid">
+                <div class="half-width">
+                    <div class="paragraph paragraph-black margin-20">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Culpa ex maiores non quod! Accusantium aspernatur aut culpa delectus distinctio et labore qui, quia quo quod rem repellat repellendus totam velit?</div>
+                    <div class="howItWorks__section-container">
+                        <div class="howItWorks__section-container-item">
+                            <div class="howItWorks__section-container-title">Easy To use</div>
+                            <div class="howItWorks__section-container-paragraph">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Culpa ex maiores non quod!</div>
+                        </div>
+                        <div class="howItWorks__section-container-item">
+                            <div class="howItWorks__section-container-title">Designed to convert</div>
+                            <div class="howItWorks__section-container-paragraph">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Culpa ex maiores non quod!</div>
+                        </div>
+                        <div class="howItWorks__section-container-item">
+                            <div class="howItWorks__section-container-title">Powered by HTML5</div>
+                            <div class="howItWorks__section-container-paragraph">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Culpa ex maiores non quod!</div>
+                        </div>
+                        <div class="howItWorks__section-container-item">
+                            <div class="howItWorks__section-container-title">Video support</div>
+                            <div class="howItWorks__section-container-paragraph">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Culpa ex maiores non quod!</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="half-width margin-20 howItWorks__video">
+                    <iframe width="300" height="315" src="https://www.youtube.com/embed/tgbNymZ7vqY">
+                    </iframe>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--Newsletter-->
+    <div class="newsletter">
+        <div class="title text-center newsletter__title margin-50">Join our Newsletter for Exclusive Deals</div>
+        <div class="newsletter__input-container">
+            <input class="newsletter__input-container-input" type="text" placeholder="Enter your email address">
+            <button class="newsletter__input-container-send-btn">Send<i class="material-icons">send</i></button>
+        </div>
+    </div>
+
+    <!--Packages-->
+    <div class="flex-column">
+        <div class="title title-green margin-50 text-center">We've got perfect package for you</div>
+        <div class="packages row-fluid">
+            <div class="package">
+                <div class="package__header">
+                    <div class="package__header-name text-center">standard</div>
+                    <div class="package__header-price text-center">$16</div>
+                    <div class="package__header-longevity text-center">For A Month</div>
+                </div>
+                <div class="package__body">
+                    <div class="paragraph paragraph-black package__body-line">Lorem ipsum dolor sit amet</div>
+                    <div class="paragraph paragraph-black package__body-line">Lorem ipsum dolor sit amet lorem lorem</div>
+                    <div class="paragraph paragraph-black package__body-line">Lorem ipsum dolor sit amet lorem</div>
+                    <button class="sign-up-btn">Sign Up Now</button>
+                </div>
+            </div>
+            <div class="package">
+                <div class="package__header">
+                    <div class="package__header-name text-center">premium</div>
+                    <div class="package__header-price text-center">$24</div>
+                    <div class="package__header-longevity text-center">For A Month</div>
+                </div>
+                <div class="package__body">
+                    <div class="paragraph paragraph-black package__body-line">Lorem ipsum dolor sit amet</div>
+                    <div class="paragraph paragraph-black package__body-line">Lorem ipsum dolor sit amet lorem lorem</div>
+                    <div class="paragraph paragraph-black package__body-line">Lorem ipsum dolor sit amet lorem</div>
+                    <button class="sign-up-btn">Sign Up Now</button>
+                </div>
+            </div>
+            <div class="package">
+                <div class="package__header">
+                    <div class="package__header-name text-center">enterprise</div>
+                    <div class="package__header-price text-center">$32</div>
+                    <div class="package__header-longevity text-center">For A Month</div>
+                </div>
+                <div class="package__body">
+                    <div class="paragraph paragraph-black package__body-line">Lorem ipsum dolor sit amet</div>
+                    <div class="paragraph paragraph-black package__body-line">Lorem ipsum dolor sit amet lorem lorem</div>
+                    <div class="paragraph paragraph-black package__body-line">Lorem ipsum dolor sit amet lorem</div>
+                    <button class="sign-up-btn">Sign Up Now</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--Packaged 2-->
+    <div class="flex-column">
+        <div class="title title-green margin-50 text-center">We've got perfect package for you</div>
+        <div class="paragraph paragraph-black row-fluid margin-20 text-center">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolore eos error neque placeat similique! Amet beatae et id minima provident, quo quod repudiandae saepe. Blanditiis cumque iusto nulla. Assumenda, magnam?</div>
+        <button class="sign-up-btn">Sign Up Now</button>
+    </div>
+
+    <!--Footer-->
+    <footer class="footer">
+        <div class="row-fluid footer__container">
+            <div class="paragraph footer__container-copyright">
+                © 2014 estash.com
+            </div>
+            <div class="footer-social-links">
+                <button class="social-link-btn"><i class="material-icons">emoji_emotions</i></button>
+                <button class="social-link-btn"><i class="material-icons">web</i></button>
+                <button class="social-link-btn"><i class="material-icons">face</i></button>
+            </div>
+        </div>
+    </footer>
 </body>
 </html>

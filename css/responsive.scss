@@ -1,8 +1,9 @@
+@import "shared/sharedStyles";
 
 .responsive {
+  padding-bottom: 50px;
 
   &__title {
-    margin: 50px;
     text-align: center;
     color: $primaryColor;
   }
@@ -21,21 +22,23 @@
       margin-bottom: 15px;
 
       i {
-        font-size: 26px;
-        color: #333333;
+        font-size: 32px;
+        color: $titleDarkColor;
       }
     }
 
     &-title {
       font-size: 20px;
-      color: #333333;
+      color: $titleDarkColor;
       text-align: center;
       margin-bottom: 10px;
     }
 
     &-paragraph {
-      color: #333333;
+      color: $titleDarkColor;
       text-align: center;
+      padding-left: 45px;
+      padding-right: 45px;
     }
   }
 }
