@@ -55,7 +55,7 @@ body {
   font-size: 14px;
   font-weight: 500;
   color: #fff;
-  line-height: 25px;
+  line-height: 30px;
 
   &-black {
     color: $titleDarkColor;
@@ -76,21 +76,42 @@ body {
   margin-bottom: 50px;
 }
 
+.padding-50 {
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
 .text-center {
   text-align: center;
 }
 
-.sign-up-btn {
+.primary-button {
   display: flex;
   justify-content: center;
-  margin: 0 auto;
-  padding: 10px;
+  padding: 10px 25px;
   align-items: center;
   background-color: $primaryColor;
   border-radius: 5px;
   font-size: 16px;
+  font-weight: 500;
   border-color: $primaryColor;
   color: #fff;
+  cursor: pointer;
+
+  &-center {
+    margin: 0 auto;
+  }
+}
+
+.secondary-button {
+  @extend .primary-button;
+  border-color: #ffffff;
+}
+
+.white-button {
+  @extend .primary-button;
+  background-color: #ffffff;
+  color: $primaryColor;
 }
 
 .social-link-btn {

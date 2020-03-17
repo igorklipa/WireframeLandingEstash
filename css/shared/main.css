@@ -53,7 +53,7 @@ body {
   font-size: 14px;
   font-weight: 500;
   color: #fff;
-  line-height: 25px;
+  line-height: 30px;
 }
 .paragraph-black {
   color: #454545;
@@ -73,21 +73,39 @@ body {
   margin-bottom: 50px;
 }
 
+.padding-50 {
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
 .text-center {
   text-align: center;
 }
 
-.sign-up-btn {
+.primary-button, .white-button, .secondary-button {
   display: flex;
   justify-content: center;
-  margin: 0 auto;
-  padding: 10px;
+  padding: 10px 25px;
   align-items: center;
   background-color: #6DBC88;
   border-radius: 5px;
   font-size: 16px;
+  font-weight: 500;
   border-color: #6DBC88;
   color: #fff;
+  cursor: pointer;
+}
+.primary-button-center {
+  margin: 0 auto;
+}
+
+.secondary-button {
+  border-color: #ffffff;
+}
+
+.white-button {
+  background-color: #ffffff;
+  color: #6DBC88;
 }
 
 .social-link-btn {
@@ -110,7 +128,10 @@ body {
 .header__container {
   padding: 50px;
 }
-.header__container-logo {
+.header__title {
+  margin-bottom: 20px;
+}
+.header__logo {
   display: flex;
   justify-content: center;
   font-size: 35px;
@@ -118,8 +139,24 @@ body {
   font-weight: 300;
   margin-bottom: 150px;
 }
-.header__container-title {
-  margin-bottom: 15px;
+.header__phone {
+  overflow: hidden;
+  max-height: 300px;
+  margin-bottom: -50px;
+}
+.header__navigation {
+  display: flex;
+  margin-top: 20px;
+}
+.header__navigation-buy-now {
+  display: flex;
+  justify-content: center;
+  margin-right: 10px;
+}
+.header__navigation-buy-now i {
+  font-weight: 700;
+  font-size: 21px;
+  margin-right: 7px;
 }
 
 .responsive {
@@ -181,6 +218,7 @@ body {
   font-size: 14px;
   font-weight: 500;
   color: #454545;
+  line-height: 30px;
 }
 .howItWorks__video {
   display: flex;
@@ -209,6 +247,7 @@ body {
   border-top-left-radius: 5px;
   font-size: 16px;
   width: 450px;
+  color: #ffffff;
   background-color: transparent;
 }
 .newsletter__input-container-send-btn {
@@ -222,6 +261,7 @@ body {
   font-size: 16px;
   border-color: #6DBC88;
   color: #fff;
+  cursor: pointer;
 }
 .newsletter__input-container-send-btn i {
   margin-left: 8px;

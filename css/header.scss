@@ -6,18 +6,41 @@
 
   &__container {
     padding: 50px;
+  }
 
-    &-logo {
+  &__title {
+    margin-bottom: 20px;
+  }
+
+  &__logo {
+    display: flex;
+    justify-content: center;
+    font-size: 35px;
+    color: #fff;
+    font-weight: 300;
+    margin-bottom: 150px;
+  }
+
+  &__phone {
+    overflow: hidden;
+    max-height: 300px;
+    margin-bottom: -50px;
+  }
+
+  &__navigation {
+    display: flex;
+    margin-top: 20px;
+
+    &-buy-now {
       display: flex;
       justify-content: center;
-      font-size: 35px;
-      color: #fff;
-      font-weight: 300;
-      margin-bottom: 150px;
-    }
+      margin-right: 10px;
 
-    &-title {
-      margin-bottom: 15px;
+      i {
+        font-weight: 700;
+        font-size: 21px;
+        margin-right: 7px;
+      }
     }
   }
 }
