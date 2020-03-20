@@ -1,0 +1,21 @@
+.footer {
+  background-color: #373737;
+}
+.footer__container {
+  padding: 50px 0;
+}
+.footer__container-copyright {
+  color: #949494;
+}
+
+.footer-social-links {
+  display: flex;
+}
+.footer-social-links > *:not(:last-child) {
+  margin-right: 8px;
+}
+.footer-social-links > * i {
+  font-size: 18px;
+}
+
+/*# sourceMappingURL=footer.css.map */

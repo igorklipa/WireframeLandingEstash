@@ -1,0 +1,57 @@
+@import "shared/shared";
+
+.responsive {
+  padding-bottom: 50px;
+
+  &__title {
+    text-align: center;
+    color: $primaryColor;
+  }
+
+  &__article-container {
+    flex-wrap: wrap;
+  }
+
+  &__article {
+    flex: 0 25%;
+
+    &-image {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 80px;
+      width: 80px;
+      border-radius: 50%;
+      background-color: #F6F6F6;
+      padding: 15px;
+      margin-bottom: 15px;
+
+      i {
+        font-size: 32px;
+        color: $titleDarkColor;
+      }
+    }
+
+    &-title {
+      font-size: 20px;
+      color: $titleDarkColor;
+      text-align: center;
+      margin-bottom: 10px;
+    }
+
+    &-paragraph {
+      color: $titleDarkColor;
+      text-align: center;
+      padding-left: 10%;
+      padding-right: 10%;
+    }
+  }
+}
+
+@media only screen and (max-width: 786px) {
+  .responsive {
+    &__article {
+      flex: 0 50%;
+    }
+  }
+}

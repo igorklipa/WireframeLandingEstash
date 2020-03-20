@@ -1,0 +1,79 @@
+@import "shared/shared";
+
+.header {
+  background-color: $primaryColor;
+  width: 100vw;
+
+  &__container {
+    padding: 50px;
+  }
+
+  &__title {
+    margin-bottom: 20px;
+  }
+
+  &__logo {
+    display: flex;
+    justify-content: center;
+    font-size: 35px;
+    color: #fff;
+    font-weight: 300;
+    margin-bottom: 150px;
+  }
+
+  &__phone {
+    max-width: 100%;
+    height: auto;
+    overflow: hidden;
+    max-height: 223px;
+    margin-bottom: -50px;
+
+    img {
+      width: 100%;
+    }
+  }
+
+  &__navigation {
+    display: flex;
+    margin-top: 20px;
+
+    &-buy-now {
+      display: flex;
+      justify-content: center;
+      margin-right: 10px;
+
+      i {
+        font-weight: 700;
+        font-size: 21px;
+        margin-right: 7px;
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 1341px) {
+  .header {
+    &__phone {
+      max-height: 250px;
+    }
+  }
+}
+
+@media only screen and (max-width: 1300px) {
+  .header {
+    &__phone {
+      display: none;
+    }
+  }
+}
+
+@media only screen and (max-width: 786px) {
+  .header {
+    .paragraph, .title {
+      text-align: center;
+    }
+    &__navigation {
+      justify-content: center;
+    }
+  }
+}

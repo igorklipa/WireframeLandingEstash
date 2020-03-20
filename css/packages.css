@@ -1,0 +1,56 @@
+.package {
+  margin: 0 10px;
+  border-radius: 5px;
+  border: 1px solid #F6F6F6;
+  cursor: pointer;
+}
+.package:hover {
+  border: 1px solid #6DBC88;
+}
+.package:hover .package__header {
+  background-color: #6DBC88;
+}
+.package:hover .package__header-name, .package:hover .package__header-price, .package:hover .package__header-longevity {
+  color: #F8FCFA;
+}
+.package__header {
+  padding: 25px;
+  background-color: #F6F6F6;
+  border-radius: 5px;
+}
+.package__header-name {
+  font-size: 22px;
+  font-weight: 500;
+  color: #454545;
+  text-transform: uppercase;
+}
+.package__header-price {
+  font-size: 26px;
+  color: #6DBC88;
+  margin: 10px 0;
+}
+.package__header-longevity {
+  font-size: 14px;
+  color: #454545;
+}
+.package__body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 20px;
+}
+.package__body-line {
+  text-align: center;
+  margin: 15px;
+}
+.package__body-line:after {
+  content: "";
+  border-top: 1px solid #454545;
+  opacity: 0.5;
+  margin: 10px 0;
+  display: flex;
+  width: 100%;
+  height: 2px;
+}
+
+/*# sourceMappingURL=packages.css.map */

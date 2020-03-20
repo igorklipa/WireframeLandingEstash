@@ -1,0 +1,54 @@
+@import "shared/shared";
+
+.howItWorks {
+  margin-bottom: 20px;
+
+  &__section-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+
+  &__paragraph-item {
+    display: flex;
+    flex-direction: column;
+    flex: 0 45%;
+    margin: 10px;
+
+    &-title {
+      font-size: 16px;
+      font-weight: 900;
+      margin-bottom: 20px;
+      color: $titleDarkColor;
+    }
+
+    &-paragraph {
+      font-size: 14px;
+      font-weight: 500;
+      color: $titleDarkColor;
+      line-height: 30px;
+    }
+  }
+
+  &__video {
+    display: flex;
+    justify-content: center;
+  }
+}
+
+@media only screen and (max-width: 1000px) {
+  .howItWorks {
+    &__container {
+      flex-direction: column;
+    }
+    &__paragraph-item {
+      flex: 0 100%;
+    }
+    &__video {
+      margin-top: 100px;
+      iframe {
+        width: 80%;
+      }
+    }
+  }
+}

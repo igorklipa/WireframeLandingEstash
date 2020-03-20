@@ -1,0 +1,80 @@
+@import "shared/shared";
+
+.packages {
+  margin-bottom: 30px;
+}
+
+.package {
+  margin: 0 10px;
+  border-radius: 5px;
+  border: 1px solid #F6F6F6;
+  cursor: pointer;
+
+  &:hover {
+    border: 1px solid $primaryColor;
+
+    .package__header {
+      background-color: $primaryColor;
+    }
+
+    .package__header-name, .package__header-price, .package__header-longevity {
+      color: #F8FCFA;
+    }
+  }
+
+  &__header {
+    padding: 25px;
+    background-color: #F6F6F6;
+    border-radius: 5px;
+
+    &-name {
+      font-size: 22px;
+      font-weight: 500;
+      color: $titleDarkColor;
+      text-transform: uppercase;
+    }
+
+    &-price {
+      font-size: 26px;
+      color: $primaryColor;
+      margin: 10px 0;
+    }
+
+    &-longevity {
+      font-size: 14px;
+      color: $titleDarkColor;
+    }
+  }
+
+  &__body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 20px;
+
+    &-line {
+      text-align: center;
+      margin: 15px;
+
+      &:after {
+        content: "";
+        border-top: 1px solid $titleDarkColor;
+        opacity: 0.5;
+        margin: 10px 0;
+        display: flex;
+        width: 100%;
+        height: 2px;
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 786px) {
+  .packages {
+    flex-direction: column;
+
+    .package {
+      margin-top: 50px;
+    }
+  }
+}
