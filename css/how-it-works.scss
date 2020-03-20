@@ -1,4 +1,4 @@
-@import "shared/sharedStyles";
+@import "shared/shared";
 
 .howItWorks {
   margin-bottom: 20px;
@@ -7,13 +7,13 @@
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
+  }
 
-    &-item {
-      display: flex;
-      flex-direction: column;
-      flex: 0 45%;
-      margin: 10px;
-    }
+  &__paragraph-item {
+    display: flex;
+    flex-direction: column;
+    flex: 0 45%;
+    margin: 10px;
 
     &-title {
       font-size: 16px;
@@ -33,9 +33,22 @@
   &__video {
     display: flex;
     justify-content: center;
+  }
+}
 
-    iframe {
-      width: 70%;
+@media only screen and (max-width: 1000px) {
+  .howItWorks {
+    &__container {
+      flex-direction: column;
+    }
+    &__paragraph-item {
+      flex: 0 100%;
+    }
+    &__video {
+      margin-top: 100px;
+      iframe {
+        width: 80%;
+      }
     }
   }
 }

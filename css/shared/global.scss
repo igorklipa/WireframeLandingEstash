@@ -1,4 +1,4 @@
-@import "sharedStyles.css";
+@import "shared.css";
 
 * {
   font-family: "Open Sans", sans-serif;
@@ -35,10 +35,6 @@ body {
 .flex-center {
   justify-content: center;
   align-items: center;
-}
-
-.half-width {
-  width: 50%;
 }
 
 .title {

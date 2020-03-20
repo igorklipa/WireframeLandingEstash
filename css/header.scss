@@ -1,4 +1,4 @@
-@import "shared/sharedStyles";
+@import "shared/shared";
 
 .header {
   background-color: $primaryColor;
@@ -22,9 +22,15 @@
   }
 
   &__phone {
+    max-width: 100%;
+    height: auto;
     overflow: hidden;
-    max-height: 300px;
+    max-height: 223px;
     margin-bottom: -50px;
+
+    img {
+      width: 100%;
+    }
   }
 
   &__navigation {
@@ -41,6 +47,33 @@
         font-size: 21px;
         margin-right: 7px;
       }
+    }
+  }
+}
+
+@media only screen and (max-width: 1341px) {
+  .header {
+    &__phone {
+      max-height: 250px;
+    }
+  }
+}
+
+@media only screen and (max-width: 1300px) {
+  .header {
+    &__phone {
+      display: none;
+    }
+  }
+}
+
+@media only screen and (max-width: 786px) {
+  .header {
+    .paragraph, .title {
+      text-align: center;
+    }
+    &__navigation {
+      justify-content: center;
     }
   }
 }

@@ -1,4 +1,4 @@
-@import "shared/sharedStyles";
+@import "shared/shared";
 
 .responsive {
   padding-bottom: 50px;
@@ -8,7 +8,12 @@
     color: $primaryColor;
   }
 
+  &__article-container {
+    flex-wrap: wrap;
+  }
+
   &__article {
+    flex: 0 25%;
 
     &-image {
       display: flex;
@@ -37,8 +42,16 @@
     &-paragraph {
       color: $titleDarkColor;
       text-align: center;
-      padding-left: 45px;
-      padding-right: 45px;
+      padding-left: 10%;
+      padding-right: 10%;
+    }
+  }
+}
+
+@media only screen and (max-width: 786px) {
+  .responsive {
+    &__article {
+      flex: 0 50%;
     }
   }
 }
